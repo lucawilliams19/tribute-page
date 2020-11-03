@@ -1,0 +1,92 @@
+#main{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0%;
+    justify-items: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    width: 40vw;
+}
+
+#title{
+    align-self: right;
+}
+
+.article{
+    width: 40vw;
+    text-align: center;
+}
+
+
+#img-div{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+}
+
+#image{
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    width: max-content;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes mymove {
+    from {
+        left: -30vw;
+        opacity: 0%;
+    }
+    to {
+        left: 0vw;
+        opacity: 100%;
+    }
+  }
+
+
+  #tribute-info{
+      color: darkslategray;
+      font-family: monospace;
+      letter-spacing: .15em;
+      overflow: hidden;
+      white-space: normal;
+      border-right: 0.3rem dotted deeppink;
+      margin: 0 auto;
+
+      animation: teclear 4s steps(35, end), intercalculation 1s step-end infinite;
+    }
+
+    @keyframes intercalculation{
+        from, to {border-color: whitesmoke;}
+        10%{border-color: darkslategrey;}
+    }
+
+    @keyframes teclear{
+        from{
+            width: 0%;
+            height: 0%;
+        }
+
+        to{
+            width: 100%;
+            height: auto;
+        }
+    }
+
